@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🚜 ATV / UTV 레퍼런스 분석 대시보드")
+st.title("ATV / UTV 판매 분석 대시보드")
 
 # ----------------------
 # LOAD DATA
