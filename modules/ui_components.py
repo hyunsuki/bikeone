@@ -22,7 +22,7 @@ def clean_image_url(url):
 
 def render_cards(df):
     st.subheader("📦 레퍼런스 리스트")
-    st.markdown("###### 판매 리스트")
+    st.markdown("#### 판매 리스트")
 
     for _, row in df.iterrows():
         with st.container():
@@ -39,7 +39,7 @@ def render_cards(df):
             with col2:
                 st.markdown(f"### {row['고객명']}")
                 st.write(f"🏷 산업: {row['대분류']} / {row['중분류']}")
-                st.write(f"🚗 모델: {row['모델명']}")
+                st.write(f" 모델: {row['모델명']}")
 
             with col3:
                 if pd.notna(row.get("출처URL")):
