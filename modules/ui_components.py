@@ -22,6 +22,7 @@ def clean_image_url(url):
 
 def render_cards(df):
     st.subheader("📦 레퍼런스 리스트")
+    st.markdown("###### 판매 리스트")
 
     for _, row in df.iterrows():
         with st.container():
